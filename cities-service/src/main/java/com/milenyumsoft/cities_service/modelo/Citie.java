@@ -20,7 +20,7 @@ public class Citie {
     private String continent;
     private String country;
     private String status;
-    private List<Hotel> listHotel;
+    private List<Hotel> listHotel = new ArrayList<>();
 
 
 }
