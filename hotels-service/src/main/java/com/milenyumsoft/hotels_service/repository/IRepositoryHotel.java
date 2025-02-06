@@ -1,11 +1,13 @@
 package com.milenyumsoft.hotels_service.repository;
 
 import com.milenyumsoft.hotels_service.modelo.Hotel;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IRepository {
+@Repository
+public class IRepositoryHotel {
 
     public List<Hotel> allHotel(Long id_citie){
 

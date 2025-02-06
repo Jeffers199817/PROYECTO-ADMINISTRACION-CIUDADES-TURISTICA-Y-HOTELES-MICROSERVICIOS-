@@ -1,12 +1,19 @@
 package com.milenyumsoft.hotels_service.service;
 
 import com.milenyumsoft.hotels_service.modelo.Hotel;
+import com.milenyumsoft.hotels_service.repository.IRepositoryHotel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class HotelService implements IHotelService{
+
+    @Autowired
+    private IRepositoryHotel repoHotel;
+
 
     @Override
     public List<Hotel> hotelAll(){
@@ -18,12 +25,6 @@ public class HotelService implements IHotelService{
 
     @Override
     public List<Hotel> hotelAllById(Long id_citie){
-
-        List<Hotel> listHotel = new ArrayList<>();
-        listHotel.add();
-
-
-
-        return null;
+        return  repoHotel.allHotel(id_citie);
     }
 }
