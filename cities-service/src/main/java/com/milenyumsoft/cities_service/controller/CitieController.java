@@ -19,8 +19,10 @@ public class CitieController {
 
     @GetMapping("/{name}/{country}")
     public Citie getCitie(@PathVariable("name") String name, @PathVariable("country") String country){
+        System.out.println(name + " " + country);
+        System.out.println("HGola estoy aquyi ");
 
-        return  citieServ.getCitie(name, country);;
+        return  citieServ.getCitie(name, country);
     }
 
 

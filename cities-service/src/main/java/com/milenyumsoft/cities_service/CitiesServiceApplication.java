@@ -13,6 +13,7 @@ import java.util.List;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
+
 public class CitiesServiceApplication {
 
 	public static void main(String[] args) {

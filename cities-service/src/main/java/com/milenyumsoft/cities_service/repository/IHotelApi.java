@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 
-@FeignClient(name="hotel-service")
+@FeignClient(name="hotels-service")
 public interface IHotelApi {
 
-    @GetMapping("{/id_citie}")
+    @GetMapping("/hotel/{id_citie}")
     public List<Hotel> hotelAllById(@PathVariable("id_citie") Long id_citie);
 }
