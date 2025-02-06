@@ -15,4 +15,9 @@ public class Hotel {
     private String nombre;
     private int numbersOfStars;
     private Long id_citie;
+
+
+
+
+
 }
