@@ -15,4 +15,6 @@ public interface IHotelApi {
 
     @GetMapping("/hotel/{id_citie}")
     public List<Hotel> hotelAllById(@PathVariable("id_citie") Long id_citie);
+
+    System.out.println( "Llegamos");
 }
