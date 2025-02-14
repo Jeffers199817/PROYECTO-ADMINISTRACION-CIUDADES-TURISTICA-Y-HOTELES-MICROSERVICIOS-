@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/hotel")
+@RequestMapping("/hotels")
 public class HotelController {
 
     @Autowired
     private IHotelService hotelService;
 
 
-    @GetMapping("/{id_citie}")
-    public List<Hotel> hotelAllById(@PathVariable Long id_citie){
+    @GetMapping("/{city_id}")
+    public List<Hotel> hotelAllById(@PathVariable Long city_id){
 
-        return hotelService.hotelAllById(id_citie);
+        return hotelService.hotelAllById(city_id);
     }
 
 

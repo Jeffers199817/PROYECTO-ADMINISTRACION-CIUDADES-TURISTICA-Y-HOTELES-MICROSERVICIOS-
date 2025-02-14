@@ -11,5 +11,5 @@ public interface IHotelService {
     public List<Hotel> hotelAll();
 
 
-    public List<Hotel> hotelAllById(Long id_citie);
+    public List<Hotel> hotelAllById(Long city_id);
 }

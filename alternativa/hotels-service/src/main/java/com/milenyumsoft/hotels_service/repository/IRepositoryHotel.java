@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public class IRepositoryHotel {
 
-    public List<Hotel> allHotel(Long id_citie){
+    public List<Hotel> allHotel(Long city_id){
 
         List<Hotel> listHotel = new ArrayList<>();
 
@@ -31,7 +31,7 @@ public class IRepositoryHotel {
 
         for(Hotel hotel: new Hotel[]{hotel1,hotel2,hotel3,hotel4,hotel5,hotel6,hotel7,hotel8,hotel9,hotel10}) {
 
-            if(hotel.getId_citie()==id_citie){
+            if(hotel.getCity_id()==city_id){
 
                 listHotel.add(hotel);
             }

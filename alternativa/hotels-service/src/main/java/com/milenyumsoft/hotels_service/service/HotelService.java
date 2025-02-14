@@ -24,7 +24,7 @@ public class HotelService implements IHotelService{
     }
 
     @Override
-    public List<Hotel> hotelAllById(Long id_citie){
-        return  repoHotel.allHotel(id_citie);
+    public List<Hotel> hotelAllById(Long city_id){
+        return  repoHotel.allHotel(city_id);
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @FeignClient(name = "hotels-service")
 public interface IHotelsAPI {
 
-    @GetMapping("hotels/{city_id}")
+    @GetMapping("/hotels/{city_id}")
     public List<HotelDTO> getHotelsByCityId (@PathVariable("city_id") Long city_id);
 
 }

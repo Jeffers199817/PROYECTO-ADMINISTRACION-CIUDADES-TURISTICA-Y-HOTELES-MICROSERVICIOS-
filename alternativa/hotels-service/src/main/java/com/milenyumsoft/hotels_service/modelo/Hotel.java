@@ -11,10 +11,10 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Hotel {
 
-    private Long id_hotel;
-    private String nombre;
-    private int numbersOfStars;
-    private Long id_citie;
+    private Long id;
+    private String name;
+    private int stars;
+    private Long city_id;
 
 
 
