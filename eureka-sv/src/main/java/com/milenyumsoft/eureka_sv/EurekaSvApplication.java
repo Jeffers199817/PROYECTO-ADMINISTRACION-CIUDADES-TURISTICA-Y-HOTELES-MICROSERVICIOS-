@@ -10,6 +10,7 @@ public class EurekaSvApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaSvApplication.class, args);
+		System.out.println("esto es eureka server");
 	}
 
 }
